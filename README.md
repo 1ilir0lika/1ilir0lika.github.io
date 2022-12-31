@@ -1,1 +1,1 @@
-sito dove netto eventuali progetti per scuola
+sito dove metto eventuali progetti per scuola
