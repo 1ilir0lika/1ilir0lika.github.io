@@ -1,3 +1,3 @@
 layout: page
 title: "titolo"
-permalink: /pagina
+permalink: /pagina/
