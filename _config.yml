@@ -1,4 +1,3 @@
-theme: post
+theme: jekyll-theme-minimal
 title: titolo
 description: dove metto cose
-date: YYYY-MM-DD hh:mm:ss -0000
