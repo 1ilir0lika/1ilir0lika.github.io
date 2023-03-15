@@ -3,6 +3,7 @@ p{
     height:50px;
     width:100%;
     display:table;
+    font-family: Roboto, sans-serif;
 }
 span{
     display: table-cell;
@@ -16,6 +17,7 @@ ul.lista {
   display: inline-block;
   text-align: left;
   list-style-type: "✅ ";
+  font-family: Roboto, sans-serif;
 }
 div.container{
   text-align: center;
@@ -31,6 +33,7 @@ div.animate{
 }
 h1 {
   text-align: center;
+  font-family: Roboto, sans-serif;
 }
 @keyframes fromdown {
   from {
@@ -69,10 +72,11 @@ nav ul li a {
   text-decoration: none;
   color: #ffffff;
   padding: 4% 0;
+  font-family: Roboto, sans-serif;
 }
 nav ul li a:hover {
   display: block;
   text-decoration: none;
   background-color: #0611a5;
-  padding: 10px 0;
+  padding: 4% 0;
 }
