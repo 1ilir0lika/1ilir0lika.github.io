@@ -1,6 +1,6 @@
 p{
     text-align:center;
-    height:50px;
+    height:auto;
     width:100%;
     display:table;
     font-family: Roboto, sans-serif;
@@ -18,6 +18,9 @@ ul.lista {
   text-align: left;
   list-style-type: "✅ ";
   font-family: Roboto, sans-serif;
+}
+ul.lista li{
+padding: 4px;
 }
 div.container{
   text-align: center;
