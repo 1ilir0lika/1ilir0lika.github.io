@@ -15,12 +15,64 @@ body {
 ul.lista {
   display: inline-block;
   text-align: left;
+  list-style-type: "✅ ";
 }
 div.container{
   text-align: center;
   margin:auto;
   display:table;
 }
+div.animate{
+  text-align: center;
+  margin:auto;
+  display:table;
+  animation-duration: 1.3s;
+  animation-name: fromdown;
+}
 h1 {
   text-align: center;
+}
+@keyframes fromdown {
+  from {
+    height:4000px;
+  }
+
+  to {
+    height:0;
+  }
+}
+
+nav {
+  background: #0a5283;
+  border-right: none;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  flex-grow: 1;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 0;
+}
+nav ul li a:hover {
+  display: block;
+  text-decoration: none;
+  background-color: #0611a5;
+  padding: 10px 0;
 }
