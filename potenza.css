@@ -4,7 +4,7 @@ p{
     width:100%;
     display:table;
     font-family: Roboto, sans-serif;
-    font-size: 2vw;
+    font-size: 2vh;
 }
 span{
     display: table-cell;
@@ -19,7 +19,7 @@ ul.lista {
   text-align: left;
   list-style-type: "✅ ";
   font-family: Roboto, sans-serif;
-  font-size: 2vw;
+  font-size: 2vh;
 }
 div.container{
   text-align: center;
@@ -35,11 +35,11 @@ div.animate{
 }
 h1 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 3vh;
   font-family: Roboto, sans-serif;
 }
 h2 {
-  font-size: 2.3vw;
+  font-size: 2.3vh;
   text-align: center;
   font-family: Roboto, sans-serif;
 }
@@ -72,7 +72,7 @@ nav ul li {
   list-style: none;
   flex-grow: 1;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.5vh;
 }
 
 nav ul li a {
@@ -97,7 +97,7 @@ input[type=text] {
   border-radius: 25px;
   display: block;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2.5vh;
 }
 input[type=submit] {
   padding: auto;
