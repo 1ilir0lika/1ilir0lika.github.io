@@ -4,11 +4,12 @@ p{
     width:100%;
     display:table;
     font-family: Roboto, sans-serif;
+    font-size: 2vw;
 }
 span{
     display: table-cell;
     vertical-align: middle;
-}
+  }
 
 body {
   background-color: lightblue;
@@ -18,9 +19,7 @@ ul.lista {
   text-align: left;
   list-style-type: "✅ ";
   font-family: Roboto, sans-serif;
-}
-ul.lista li{
-padding: 4px;
+  font-size: 2vw;
 }
 div.container{
   text-align: center;
@@ -36,9 +35,11 @@ div.animate{
 }
 h1 {
   text-align: center;
+  font-size: 3vw;
   font-family: Roboto, sans-serif;
 }
 h2 {
+  font-size: 2.3vw;
   text-align: center;
   font-family: Roboto, sans-serif;
 }
@@ -55,7 +56,6 @@ h2 {
 nav {
   background: #0a5283;
   border-right: none;
-  width: 100%;
 }
 
 nav ul {
@@ -72,6 +72,7 @@ nav ul li {
   list-style: none;
   flex-grow: 1;
   text-align: center;
+  font-size: 1.5vw;
 }
 
 nav ul li a {
@@ -86,4 +87,21 @@ nav ul li a:hover {
   text-decoration: none;
   background-color: #0611a5;
   padding: 20px 0;
+}
+input[type=text] {
+  width: 100%;
+  padding: 8px;
+  background-color: #1b25a8;
+  color: #ffffff;
+  font-size: large;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  font-size: 2.5vw;
+}
+input[type=submit] {
+  padding: auto;
+  padding: 8px 20px;
+  background-color: #1b25a8;
+  color: #ffffff;
 }
