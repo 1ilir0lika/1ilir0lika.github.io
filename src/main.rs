@@ -27,5 +27,5 @@ async fn submit_segnalazione(form: Form<Segnalazione>) -> Option<NamedFile>{
 fn rocket() -> _ {
     rocket::build()
     .mount("/", routes![submit_segnalazione])
-    .mount("/",FileServer::from("/home/demor/progetti/site/demorme"))
+    .mount("/",FileServer::from("/path/"))
 }
