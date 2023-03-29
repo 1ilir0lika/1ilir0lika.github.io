@@ -4,7 +4,7 @@ use rocket::fs::FileServer;
 use rocket::form::Form;
 use rocket::fs::NamedFile;
 use teloxide::prelude::*;
-
+use rocket::fs::relative;
 #[derive(FromForm)]
 struct Segnalazione {
     segnalazioni: String,
@@ -18,17 +18,14 @@ async fn submit_segnalazione(form: Form<Segnalazione>) -> Option<NamedFile>{
     //pretty_env_logger::init();
     let  chat_id:ChatId = ChatId(1755296389);
     let bot = Bot::from_env();
-    match bot.send_message(chat_id, segnalazione.segnalazioni).await{
-        Err(_e)=>{NamedFile::open("fail.html").await.ok()},
-        _ => {NamedFile::open("success.html").await.ok()},
-    };
+    bot.send_message(chat_id, segnalazione.segnalazioni).await.ok();
     //log::info!("segnalazione inviata");
     //aprire schermata bella di ringraziamento e mandare messaggio al bot telegram
-    NamedFile::open("success.html").await.ok()
+    NamedFile::open(relative!("static/success.html")).await.ok()
 }
 #[launch]
 fn rocket() -> _ {
     rocket::build()
     .mount("/", routes![submit_segnalazione])
-    .mount("/",FileServer::from("/home/demor/progetti/site/demorme/"))
+    .mount("/",FileServer::from("/home/demor/progetti/site/demorme"))
 }
