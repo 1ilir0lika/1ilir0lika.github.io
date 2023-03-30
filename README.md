@@ -1,1 +1,1 @@
-sito dove metto eventuali progetti per scuola
+lista dei mie progetti pubblici fatti per scuola
